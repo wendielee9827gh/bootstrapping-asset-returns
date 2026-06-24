@@ -11,7 +11,3 @@ By generating $B = 5,000$ independent bootstrapped samples across historical ass
 * **Language:** Python
 * **Libraries:** Pandas, NumPy, Matplotlib, Scipy
 * **Methods:** Bootstrapping, Monte Carlo Simulation, Rolling-Window Inference, Non-parametric Estimation
-
----
-👉 **[Click Here to View the Interactive Analytics Report via Nbviewer](YOUR_NBVIEWER_URL_HERE)**
-*(View full dynamic charts, distributions, and rolling confidence intervals without running any local code.)*
