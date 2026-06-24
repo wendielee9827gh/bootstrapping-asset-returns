@@ -1,2 +1,17 @@
-# bootstrapping-asset-returns
-A quantitative simulation project in Python that implements a 5,000-round bootstrapping framework to evaluate the statistical certainty and standard errors of asset returns. The model successfully maps dynamic, rolling 95% confidence intervals to stress-test the stability of financial metrics over time.
+### Overview
+This project addresses a fundamental challenge in quantitative finance: assessing the statistical confidence of empirical asset return metrics. While sample statistics (e.g., mean, standard deviation, and correlation) are straightforward to compute, drawing investment decisions solely from these point estimates is unreliable without quantifying their sample variance. This study implements a rigorous computational **Bootstrapping (Monte Carlo resampling with replacement)** framework in Python to stress-test financial metrics and measure the underlying certainty of key return statistics.
+
+### Key Outcome
+
+By generating $B = 5,000$ independent bootstrapped samples across historical asset returns, the simulation successfully mapped the time-varying joint distribution of benchmark indices (e.g., NASDAQ 100 vs. Dow Jones Industrial Average). The empirical models successfully calculated the **Bootstrapped Standard Error (SE)** and established dynamic, rolling 95% confidence intervals ($\hat{\theta}_N \pm 1.96 \times SE$). This granular boundary mapping uncovers hidden statistical regime shifts, revealing periods where asset correlations were structurally unstable despite strong point-estimate averages.
+
+---
+
+### Tech Stack & Libraries
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Matplotlib, Scipy
+* **Methods:** Bootstrapping, Monte Carlo Simulation, Rolling-Window Inference, Non-parametric Estimation
+
+---
+👉 **[Click Here to View the Interactive Analytics Report via Nbviewer](YOUR_NBVIEWER_URL_HERE)**
+*(View full dynamic charts, distributions, and rolling confidence intervals without running any local code.)*
